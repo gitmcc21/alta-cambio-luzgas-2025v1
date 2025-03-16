@@ -1,0 +1,697 @@
+<script>window.enableEventObserver=true</script>
+<script src="https://cdn03.jotfor.ms/static/prototype.forms.js?v=3.3.61741" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/static/jotform.forms.js?v=3.3.61741" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/js/vendor/maskedinput_5.0.9.min.js?v=3.3.61741" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/punycode-1.4.1.min.js?v=3.3.61741" type="text/javascript" defer></script>
+<script src="https://cdn01.jotfor.ms/js/vendor/imageinfo.js?v=3.3.61741" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/file-uploader/fileuploader.js?v=3.3.61741" type="text/javascript"></script>
+
+<script src="https://cdn03.jotfor.ms/js/vendor/smoothscroll.min.js?v=3.3.61741" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/js/errorNavigation.js?v=3.3.61741" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = true;
+	JotForm.texts = {"confirmEmail":"E-mail does not match","pleaseWait":"Please wait...","validateEmail":"You need to validate this e-mail","confirmClearForm":"Are you sure you want to clear the form","lessThan":"Your score should be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","required":"This field is required.","requireOne":"At least one field required.","requireEveryRow":"Every row is required.","requireEveryCell":"Every cell is required.","email":"Enter a valid e-mail address","alphabetic":"This field can only contain letters","numeric":"This field can only contain numeric values","alphanumeric":"This field can only contain letters and numbers.","cyrillic":"This field can only contain cyrillic characters","url":"This field can only contain a valid URL","currency":"This field can only contain currency values.","fillMask":"Field value must fill mask.","uploadExtensions":"You can only upload following files:","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","gradingScoreError":"Score total should only be less than or equal to","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","maxDigitsError":"The maximum digits allowed is","minCharactersError":"The number of characters should not be less than the minimum value:","maxCharactersError":"The number of characters should not be more than the maximum value:","freeEmailError":"Free email accounts are not allowed","minSelectionsError":"The minimum required number of selections is ","maxSelectionsError":"The maximum number of selections allowed is ","pastDatesDisallowed":"Date must not be in the past.","dateLimited":"This date is unavailable.","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","ageVerificationError":"You must be older than {minAge} years old to submit this form.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","chooseAFile_infoMessage":"Choose a file","maxFileSize_infoMessage":"Max. file size","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","ccInvalidNumber":"Credit Card Number is invalid.","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingProduct":"Please select at least one product.","ccMissingDonation":"Please enter numeric values for donation amount.","disallowDecimals":"Please enter a whole number.","restrictedDomain":"This domain is not allowed","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","requiredLegend":"All fields marked with * are required and must be filled.","geoPermissionTitle":"Permission Denied","geoPermissionDesc":"Check your browser's privacy settings.","geoNotAvailableTitle":"Position Unavailable","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoTimeoutTitle":"Timeout","geoTimeoutDesc":"Please check your internet connection and try again.","selectedTime":"Selected Time","formerSelectedTime":"Former Time","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","noSlotsAvailable":"No slots available","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","multipleError":"There are {count} errors on this page. Please correct them before moving on.","oneError":"There is {count} error on this page. Please correct it before moving on.","doneMessage":"Well done! All errors are fixed.","invalidTime":"Enter a valid time","doneButton":"Done","reviewSubmitText":"Review and Submit","nextButtonText":"Next","prevButtonText":"Previous","seeErrorsButton":"See Errors","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","soldOut":"Sold Out","justSoldOut":"Just Sold Out","selectionSoldOut":"Selection Sold Out","subProductItemsLeft":"({count} items left)","startButtonText":"START","submitButtonText":"Submit","submissionLimit":"Sorry! Only one entry is allowed. <br> Multiple submissions are disabled for this form.","reviewBackText":"Back to Form","seeAllText":"See All","progressMiddleText":"of","fieldError":"field has an error.","error":"Error"};
+	JotForm.newPaymentUI = true;
+	JotForm.originalLanguage = "es";
+	JotForm.isFormViewTrackingAllowed = true;
+	JotForm.replaceTagTest = true;
+	JotForm.uploadServerURL = "https://upload.jotform.com/upload";
+
+   JotForm.setConditions([{"action":[{"id":"action_1742101260303","visibility":"ShowMultiple","isError":false,"fields":["38","39","53","54","55","56"]}],"id":"1742101316423","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1742101260303","field":"42","operator":"equals","value":"domiciliado","isError":false}],"type":"field"},{"action":[{"id":"action_1742101169559","visibility":"Show","isError":false,"field":"35"}],"id":"1742101181694","index":"1","link":"Any","priority":"1","terms":[{"id":"term_1742101169559","field":"3","operator":"equals","value":"luz","isError":false}],"type":"field"},{"action":[{"id":"action_0_1742101194248","visibility":"Show","isError":false,"field":"37"}],"id":"1742101192162","index":"2","link":"Any","priority":"2","terms":[{"id":"term_0_1742101194248","field":"3","operator":"equals","value":"gas","isError":false}],"type":"field"},{"action":[{"id":"action_0_1742101217398","visibility":"ShowMultiple","isError":false,"fields":["35","37"]}],"id":"1742101189118","index":"3","link":"Any","priority":"3","terms":[{"id":"term_0_1742101217398","field":"3","operator":"equals","value":"ambos","isError":false}],"type":"field"},{"action":[{"id":"action_0_1742101420531","visibility":"ShowMultiple","isError":false,"fields":["13","11"]}],"id":"1742101017503","index":"4","link":"Any","priority":"4","terms":[{"id":"term_0_1742101420531","field":"7","operator":"equals","value":"persona física","isError":false}],"type":"field"},{"action":[{"id":"action_0_1742101417895","visibility":"ShowMultiple","isError":false,"fields":["14","16"]}],"id":"1742101417895","index":"5","link":"Any","priority":"5","terms":[{"id":"term_0_1742101417895","field":"7","operator":"equals","value":"persona jurídica, sociedad etc.","isError":false}],"type":"field"},{"action":[{"id":"action_0_1742100923284","visibility":"Show","isError":false,"field":"48"}],"id":"1742100857402","index":"6","link":"All","priority":"6","terms":[{"id":"term_0_1742100923284","field":"3","operator":"equals","value":"luz","isError":false},{"id":"term_1_1742100923284","field":"4","operator":"equals","value":"alta nueva","isError":false}],"type":"field"},{"action":[{"id":"action_0_1742100930729","visibility":"Show","isError":false,"field":"49"}],"id":"1742100876816","index":"7","link":"All","priority":"7","terms":[{"id":"term_0_1742100930729","field":"3","operator":"equals","value":"gas","isError":false},{"id":"term_1_1742100930729","field":"4","operator":"equals","value":"alta nueva","isError":false}],"type":"field"},{"action":[{"id":"action_0_1742101038119","visibility":"Show","isError":false,"field":"49"}],"id":"1742101038119","index":"8","link":"All","priority":"8","terms":[{"id":"term_0_1742101038119","field":"3","operator":"equals","value":"gas","isError":false},{"id":"term_1_1742101038119","field":"4","operator":"equals","value":"alta nueva","isError":false}],"type":"field"}]);	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+	window.addEventListener('DOMContentLoaded',function(){window.brandingFooter.init({"formID":250734095309054,"campaign":"powered_by_jotform_le","isCardForm":false,"isLegacyForm":true,"formLanguage":"es"})});	JotForm.isFullSource = true;
+
+	JotForm.init(function(){
+	/*INIT-START*/
+if (window.JotForm && JotForm.accessible) $('input_13').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_14').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_16').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_23').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_52').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_52', '\u0040\u0040\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0040\u0040' );
+if (window.JotForm && JotForm.accessible) $('input_24').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_25').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_26').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_26', '\u0023\u0023\u0023\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_27').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_27', '\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_28').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_28', '\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_51').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_38').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_38', '\u0040\u0040\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_39').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_39', '\u0023\u0023\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_53').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_53', '\u0023\u0023\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_54').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_54', '\u0023\u0023\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_55').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_55', '\u0023\u0023\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_56').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_56', '\u0023\u0023\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_47').setAttribute('tabindex',0);
+      JotForm.alterTexts({"ageVerificationError":"Debe ser mayor de {minAge} años para enviar este formulario.","alphabetic":"Este campo solo puede contener letras.","alphanumeric":"Este campo solo puede contener letras y números.","cancelAppointment":"Cancelar cita","cancelSelection":"Cancelar selección","ccDonationMinLimitError":"La cantidad mínima es {minAmount} {currency}","ccInvalidCVC":"El número CVC no es válido.","ccInvalidExpireDate":"La fecha de expiración no es válida","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccInvalidNumber":"El número de su tarjeta de crédito no es válido.","ccMissingDetails":"Por favor llene los datos de su tarjeta de crédito.","ccMissingDonation":"Escriba los valores numéricos de la cantidad a donar.","ccMissingProduct":"Por favor seleccione al menos un producto.","characterLimitError":"Demasiados caracteres. El límite es","characterMinLimitError":"Muy pocos caracteres. El mínimum es","chooseAFile_infoMessage":"Elegir un archivo","confirmClearForm":"¿Está seguro que desea limpiar el formulario?","confirmEmail":"El correo electrónico no coincide","currency":"Este campo sólo puede contener valores de moneda.","cyrillic":"Este campo solo puede contener caracteres cirílicos.","dateInvalid":"Esta fecha no es valida. El formato de fecha es {format}","dateInvalidSeparate":"Esta fecha no es válida. Ponga una {element} válida","dateLimited":"Esta fecha no está disponible.","disallowDecimals":"Por favor, introduzca un número entero.","doneButton":"Listo","doneMessage":"Bien hecho! Todos los errores resueltos.","dragAndDropFilesHere_infoMessage":"Arrastre y suelte archivos aquí","email":"Introduzca una dirección e-mail válida","error":"error","fieldError":"El campo tiene un error.","fillMask":"El valor de este campo debe llenar la mascara","formerSelectedTime":"Hora anterior","freeEmailError":"No se permiten cuentas de correo gratuitas","generalError":"Existen errores en el formulario, por favor corríjalos antes de continuar.","generalPageError":"Hay errores en esta página. Por favor, corríjalos antes de continuar.","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoNotAvailableTitle":"Position Unavailable","geoPermissionDesc":"Check your browser's privacy settings.","geoPermissionTitle":"Permission Denied","geoTimeoutDesc":"Please check your internet connection and try again.","geoTimeoutTitle":"Timeout","gradingScoreError":"El puntaje total debería ser sólo \"menos que\" o \"igual que\"","incompleteFields":"Existen campos requeridos incompletos. Por favor complételos.","inputCarretErrorA":"La entrada no debe ser inferior al valor mínimo:","inputCarretErrorB":"La entrada debe ser menor al valor:","invalidTime":"Introduzca una hora válida","justSoldOut":"Se acaba de agotar","lessThan":"Su puntuación debería ser menor o igual que","maxCharactersError":"The number of characters should not be more than the maximum value:","maxDigitsError":"El máximo de dígitos permitido es","maxFileSize_infoMessage":"Máximo tamaño de archivo","maxSelectionsError":"The maximum number of selections allowed is ","minCharactersError":"El número de caracteres no debería ser menos que el valor mínimo:","minSelectionsError":"El número mínimo de opciones obligatorias es","multipleError":"Hay {count} errores en esta página. Favor corregirlos antes de continuar.","multipleFileUploads_emptyError":"El archivo {file} está vacío; por favor, seleccione de nuevo los archivos sin él.","multipleFileUploads_fileLimitError":"Solo se permite subir {fileLimit} archivo(s)","multipleFileUploads_minSizeError":"El archivo {file} es demasiado pequeño, el tamaño mínimo es: {minSizeLimit}.","multipleFileUploads_onLeave":"Se están cargando los archivos, si cierra ahora, se cancelará dicha carga.","multipleFileUploads_sizeError":"El archivo {file} es demasiado grande; el tamaño del archivo no debe superar {sizeLimit}.","multipleFileUploads_typeError":"El archivo {file} posee una extensión no permitida. Solo están permitidas las extensiones {extensions}.","multipleFileUploads_uploadFailed":"Carga de archivo fallida, favor remover y cargar de nuevo.","nextButtonText":"Seguir","noSlotsAvailable":"No hay cupos disponibles","notEnoughStock":"No hay suficientes existencias para la selección actual","notEnoughStock_remainedItems":"No hay suficientes existencias para la selección actual (quedan {count} artículos)","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","numeric":"Este campo sólo admite valores numéricos.","oneError":"Hay {count} error en esta página. Favor corregirlo antes de continuar.","pastDatesDisallowed":"La fecha debe ser futura","pleaseWait":"Por favor, espere ...","prevButtonText":"Atrás","progressMiddleText":"de","required":"Este campo es obligatorio.","requiredLegend":"Todos los campos marcados con * son obligatorios y deben llenarse.","requireEveryCell":"Se requieren todas las celdas.","requireEveryRow":"Todas las filas son obligatorias.","requireOne":"Al menos un campo obligatorio.","restrictedDomain":"This domain is not allowed","reviewBackText":"Ir al formulario","reviewSubmitText":"Revisar y enviar","seeAllText":"Mostrar todos","seeErrorsButton":"Ver Errores","selectedTime":"Hora seleccionada","selectionSoldOut":"Selección agotada","slotUnavailable":"{time} del {date} que ha seleccionado no está disponible. Seleccione otro espacio.","soldOut":"Agotado","startButtonText":"COMENZAR","submissionLimit":"Lo sentimos. Sólo se permite una entrada. &lt;br&gt; Los envíos múltiples están deshabilitados para este formulario.","submitButtonText":"Enviar","subProductItemsLeft":"(quedan {count} productos)","uploadExtensions":"Solo puede subir los siguientes archivos:","uploadFilesize":"Tamaño del archivo no puede ser mayor que:","uploadFilesizemin":"Tamañao de archivo no puede ser menos de:","url":"Este campo solo contiene una URL válida.","validateEmail":"Usted necesita validar este e-mail","wordLimitError":"Demasiadas palabras. El límite es","wordMinLimitError":"Muy pocas palabras. El mínimo es"});
+      setTimeout(function() {
+          JotForm.initMultipleUploads();
+      }, 2);
+	/*INIT-END*/
+	});
+
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"alta o cambio de comercializador luz o gas","type":"control_head"},{"name":"submit2","qid":"2","text":"Enviar","type":"control_button"},{"description":"","name":"tipoDe","qid":"3","subLabel":"","text":"Tipo de suministro.","type":"control_dropdown"},{"description":"","name":"altaNueva","qid":"4","subLabel":"","text":"Alta nueva o cambio de comercializador","type":"control_dropdown"},null,{"description":"","name":"actividad","qid":"6","subLabel":"","text":"Actividad","type":"control_dropdown"},{"description":"","name":"titularDel","qid":"7","text":"Titular del contrato.","type":"control_radio"},null,null,null,{"description":"","name":"nombre","qid":"11","text":"Nombre","type":"control_fullname"},null,{"description":"","name":"dniniepasaporte","qid":"13","subLabel":"","text":"D.N.I.\u002FN.I.E.\u002FPASAPORTE","type":"control_textbox"},{"description":"","name":"cif","qid":"14","subLabel":"","text":"C.I.F. \u002F IDENTIFICACION FISCAL","type":"control_textbox"},null,{"description":"","name":"razonSocial","qid":"16","subLabel":"","text":"Razon Social","type":"control_textbox"},null,null,null,null,null,null,{"description":"","name":"escribaUna23","qid":"23","subLabel":"","text":"Direccion del suministro, calle, plaza, avenida etc..","type":"control_textbox"},{"description":"","name":"municipio","qid":"24","subLabel":"","text":"Municipio","type":"control_textbox"},{"description":"","name":"escribaUna25","qid":"25","subLabel":"","text":"Provincia","type":"control_textbox"},{"description":"","name":"escribaUna26","qid":"26","subLabel":"","text":"Codigo postal","type":"control_textbox"},{"description":"","name":"telefono1","qid":"27","subLabel":"","text":"Telefono 1","type":"control_textbox"},{"description":"","name":"escribaUna28","qid":"28","subLabel":"","text":"Telefono 2","type":"control_textbox"},null,{"description":"","name":"email","qid":"30","subLabel":"","text":"Email","type":"control_email"},null,null,null,{"description":"","name":"telefono134","qid":"34","subLabel":"","text":"Telefono 1 , prefijo pais ","type":"control_dropdown"},{"description":"","name":"potenciaDe","qid":"35","subLabel":"","text":"Potencia de electricidad a contratar watios","type":"control_dropdown"},{"description":"","name":"dniNiedel","qid":"36","subLabel":"","text":"D.N.I., N.I.E.del titular o del representante del contrato. (ambas caras) ( se pueden subir varios archivos","type":"control_fileupload"},{"description":"","name":"tarifaDe","qid":"37","subLabel":"","text":"Tarifa de gas a contratar","type":"control_dropdown"},{"description":"","name":"ibanDos","qid":"38","subLabel":"","text":"Iban dos letras y dos numeros","type":"control_textbox"},{"description":"","name":"escribaUna39","qid":"39","subLabel":"","text":"cuenta, cuatro digitos","type":"control_textbox"},null,null,{"description":"","name":"formaDe","qid":"42","text":"forma de pago","type":"control_radio"},null,{"description":"","name":"cifIdentificacion","qid":"44","subLabel":"","text":"CIF. identificacion fiscal. ( empresas, personas juridicas)(puede subir varios archivos)","type":"control_fileupload"},{"description":"","name":"certificadoDe","qid":"45","subLabel":"","text":"certificado de cuenta, recibo bancario , acreditacion de cuenta. (puede subir varios archivos)","type":"control_fileupload"},{"description":"","name":"otraDocumentacionsi","qid":"46","subLabel":"","text":"otra documentacion.(si dispone) (puede subir varios archivos) licencias de uso o actividad, escritura, copia simple, contrato de alquiler, factura actual.etc.... ","type":"control_fileupload"},{"description":"","mde":"No","name":"observacionesDudas","qid":"47","subLabel":"","text":"observaciones dudas..","type":"control_textarea","wysiwyg":"Disable"},{"name":"input48","qid":"48","text":"coste regulado de alta de luz.\r\nDerechos de extension: 17,37 € por cada kilovatio de potencia contratado.Derechos de acceso: 19,70 € por cada kilovatio de potencia contratado.Derechos de enganche: 9,04 € sin importar la potencia escogida.\r\nmas impuestos. ","type":"control_text"},{"name":"ltpgtcosteRegulado","qid":"49","text":"Precios derechos regulados de acometida de gas natural\r\nRL.1 Hasta 5.000 kWh\u002Fano 87,56 €RL.2 5.000 - 15.000 kWh\u002Fano 87,56 €RL.3 15.000 - 50.00 kWh\u002Fano 201,29 €RL.4 50.000 - 100.000 kWh\u002Fano 402,58 €\r\n \r\nPrecio derechos regulados de alta del gas\r\nComunidad Autonoma Tarifa RL.1 Tarifa RL.2 Tarifa RL.3\r\nAndalucia 59,50 € 62,83 € 80,28 €Aragon 86,66 € 91,63 € 117,04 €Asturias 92,84 € 98,15 € 125,32 €Cantabria 71,46 € 83,68 € 83,68 €Castilla La Mancha 70,21 € 72,42 € 104,23 €Castilla Leon 66,89 € 69,59 € 98,86 €Cataluna 63,51 € 63,51 € 101,27 €Comunidad de Madrid 75,40 € 75,40 € 112,79 €Comunidad Valenciana 75,18 € 75,18 € 124,27 €Extremadura 73,14 € 73,14 € 102,46 €Galicia 84,44 € 84,44 € 125,44 €Islas Baleares 80,57 € 85,18 € 108,76 €La Rioja 71,54 € 71,54 € 118,65 €Murcia 68,98 € 72,92 € 93,12 €Navarra 77,27 € 87,65 € 115,33 €Pais Vasco 86,19 € 86,19 € 129,32 €\r\n \r\nimpuestos incluidos. ","type":"control_text"},null,{"description":"","name":"titularDe","qid":"51","subLabel":"","text":"titular de la cuenta ( rellenar si es distinto al titular del contrato) ","type":"control_textbox"},{"description":"","name":"cupsSi","qid":"52","subLabel":"formato EJEMPLO ES4852695412584523AB","text":"C.U.P.S si dispone de el. ","type":"control_textbox"},{"description":"","name":"cuentaCuatro","qid":"53","subLabel":"","text":"cuenta, cuatro digitos","type":"control_textbox"},{"description":"","name":"cuentaCuatro54","qid":"54","subLabel":"","text":"cuenta, cuatro digitos","type":"control_textbox"},{"description":"","name":"cuentaCuatro55","qid":"55","subLabel":"","text":"cuenta, cuatro digitos","type":"control_textbox"},{"description":"","name":"cuentaCuatro56","qid":"56","subLabel":"","text":"cuenta, cuatro digitos","type":"control_textbox"}]);}, 20); 
+</script>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/stylebuilder/static/form-common.css?v=1a13fd0
+"/>
+<style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.61741"/>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_styles.css?3.3.61741" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3.3.61741" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Inter, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+  
+    .form-all {
+      max-width: 752px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 230px;
+    }
+  
+    .form-all {
+      font-size: 16px
+    }
+  
+  .supernova {
+    background-color: #7c9e3d;
+  }
+  .supernova body {
+    background: transparent;
+  }
+  
+    .supernova .form-all, .form-all {
+      background-color: #f4ffe0;
+    }
+  
+    .form-all {
+      color: #46552a;
+    }
+    .form-header-group .form-header {
+      color: #46552a;
+    }
+    .form-header-group .form-subHeader {
+      color: #46552a;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label,
+    span.FITB .qb-checkbox-label,
+    span.FITB .qb-radiobox-label,
+    span.FITB .form-radio label,
+    span.FITB .form-checkbox label,
+    [data-blotid][data-type=checkbox] [data-labelid],
+    [data-blotid][data-type=radiobox] [data-labelid],
+    span.FITB-inptCont[data-type=checkbox] label,
+    span.FITB-inptCont[data-type=radiobox] label {
+      color: #46552a;
+    }
+    .form-sub-label {
+      color: #606f44;
+    }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #ffffff;
+    }
+  
+    .form-line-error {
+      overflow: hidden;
+      transition: none;
+      background-color: #ffd6d6;
+    }
+
+    .form-line-error .form-error-message {
+      background-color: #DC2626;
+      clear: both;
+      float: none;
+    }
+
+    .form-line-error .form-error-arrow {
+      border-bottom-color: #FF3200;
+    }
+
+    .form-line-error input:not(#coupon-input),
+    .form-line-error textarea,
+    .form-line-error .form-validation-error {
+      border: 1px solid #c61515;
+      box-shadow: 0 0 3px #c61515;
+    }
+   
+      
+    .supernova {
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-attachment: fixed;
+      background-position: center top;
+    }
+
+      .supernova, #stage {
+        background-image: none;
+      }
+    
+      .form-all {
+        background-image: none;
+      }
+    /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://eu-submit.jotform.com/submit/250734095309054" method="post" enctype="multipart/form-data" name="form_250734095309054" id="250734095309054" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="250734095309054" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1742102078797" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1742102078797" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" />
+  <div id="formCoverLogo" style="margin-bottom:32px" class="form-cover-wrapper form-has-cover form-page-cover-image-align-center">
+    <div class="form-page-cover-image-wrapper" style="max-width:752px"><img src="https://www.jotform.com/uploads/clementesl/form_files/AAFF%20LOGOTIPO%20COLABORADOR%20OFICIAL%20HORIZONTAL%20PRINCIPAL%2002%20RGB%20ecsl.67d59ac356d194.65258577.png" class="form-page-cover-image" width="310" height="65" alt="alta o cambio de comercializador luz o gas Logo" style="aspect-ratio:310/65" /></div>
+  </div>
+  <div role="main" class="form-all">
+    <ul class="form-section page-section" role="presentation">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">alta o cambio de comercializador luz o gas</h1>
+            <div id="subHeader_1" class="form-subHeader"> RELLENE EL FORMULARIO Y LE HAREMOS LLEGAR NUESTRA OFERTA para en su caso firma y aceptación)</div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_3"><label class="form-label form-label-top form-label-auto" id="label_3" for="input_3" aria-hidden="false"> Tipo de suministro. </label>
+        <div id="cid_3" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_3" name="q3_tipoDe" style="width:310px" data-component="dropdown" aria-label="Tipo de suministro.">
+            <option value="">Seleccione</option>
+            <option value="luz">luz</option>
+            <option value="gas">gas</option>
+            <option value="ambos">ambos</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_4"><label class="form-label form-label-top form-label-auto" id="label_4" for="input_4" aria-hidden="false"> Alta nueva o cambio de comercializador </label>
+        <div id="cid_4" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_4" name="q4_altaNueva" style="width:310px" data-component="dropdown" aria-label="Alta nueva o cambio de comercializador">
+            <option value="">Seleccione</option>
+            <option value="alta nueva">alta nueva</option>
+            <option value="cambio de comercalizador">cambio de comercalizador</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_6"><label class="form-label form-label-top form-label-auto" id="label_6" for="input_6" aria-hidden="false"> Actividad </label>
+        <div id="cid_6" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_6" name="q6_actividad" style="width:310px" data-component="dropdown" aria-label="Actividad">
+            <option value="">Seleccione</option>
+            <option value="vivienda">vivienda</option>
+            <option value="almacen">almacen</option>
+            <option value="otros">otros</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_49">
+        <div id="cid_49" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_49" class="form-html" data-component="text" tabindex="-1">
+            <p><strong>Precios derechos regulados de acometida de gas natural</strong></p>
+            <p>RL.1 Hasta 5.000 kWh/año 87,56 €<br />RL.2 5.000 - 15.000 kWh/año 87,56 €<br />RL.3 15.000 - 50.00 kWh/año 201,29 €<br />RL.4 50.000 - 100.000 kWh/año 402,58 €</p>
+            <p> </p>
+            <p><strong>Precio derechos regulados de alta del gas</strong></p>
+            <p><br />Comunidad Autónoma Tarifa RL.1 Tarifa RL.2 Tarifa RL.3</p>
+            <p>Andalucía 59,50 € 62,83 € 80,28 €<br />Aragón 86,66 € 91,63 € 117,04 €<br />Asturias 92,84 € 98,15 € 125,32 €<br />Cantabria 71,46 € 83,68 € 83,68 €<br />Castilla La Mancha 70,21 € 72,42 € 104,23 €<br />Castilla Léon 66,89 € 69,59 € 98,86 €<br />Cataluña 63,51 € 63,51 € 101,27 €<br />Comunidad de Madrid 75,40 € 75,40 € 112,79 €<br />Comunidad Valenciana 75,18 € 75,18 € 124,27 €<br />Extremadura 73,14 € 73,14 € 102,46 €<br />Galicia 84,44 € 84,44 € 125,44 €<br />Islas Baleares 80,57 € 85,18 € 108,76 €<br />La Rioja 71,54 € 71,54 € 118,65 €<br />Murcia 68,98 € 72,92 € 93,12 €<br />Navarra 77,27 € 87,65 € 115,33 €<br />País Vasco 86,19 € 86,19 € 129,32 €</p>
+            <p> </p>
+            <p>impuestos incluidos. </p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_48">
+        <div id="cid_48" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_48" class="form-html" data-component="text" tabindex="-1">
+            <p><strong>coste regulado de alta de luz.</strong></p>
+            <p>Derechos de extensión: 17,37 € por cada kilovatio de potencia contratado.<br />Derechos de acceso: 19,70 € por cada kilovatio de potencia contratado.<br />Derechos de enganche: 9,04 € sin importar la potencia escogida.</p>
+            <p>mas impuestos. </p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_radio" id="id_7"><label class="form-label form-label-top form-label-auto" id="label_7" aria-hidden="false"> Titular del contrato. </label>
+        <div id="cid_7" class="form-input-wide" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_7" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_7" type="radio" class="form-radio" id="input_7_0" name="q7_titularDel" value="persona física" /><label id="label_input_7_0" for="input_7_0">persona física</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_7" type="radio" class="form-radio" id="input_7_1" name="q7_titularDel" value="persona jurídica, sociedad etc." /><label id="label_input_7_1" for="input_7_1">persona jurídica, sociedad etc.</label></span></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_13"><label class="form-label form-label-top form-label-auto" id="label_13" for="input_13" aria-hidden="false"> D.N.I./N.I.E./PASAPORTE </label>
+        <div id="cid_13" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_13" name="q13_dniniepasaporte" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_13" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_fullname" id="id_11" data-compound-hint=","><label class="form-label form-label-top form-label-extended form-label-auto" id="label_11" for="first_11" aria-hidden="false"> Nombre </label>
+        <div id="cid_11" class="form-input-wide always-hidden" data-layout="full">
+          <div data-wrapper-react="true" class="extended"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="first"><input type="text" id="first_11" name="q11_nombre[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_11 given-name" size="10" data-component="first" aria-labelledby="label_11 sublabel_11_first" value="" /><label class="form-sub-label" for="first_11" id="sublabel_11_first" style="min-height:13px">Nombre</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="middle"><input type="text" id="middle_11" name="q11_nombre[middle]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_11 additional-name" size="10" data-component="middle" aria-labelledby="label_11 sublabel_11_middle" value="" /><label class="form-sub-label" for="middle_11" id="sublabel_11_middle" style="min-height:13px">Apellido 1</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="last"><input type="text" id="last_11" name="q11_nombre[last]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_11 family-name" size="15" data-component="last" aria-labelledby="label_11 sublabel_11_last" value="" /><label class="form-sub-label" for="last_11" id="sublabel_11_last" style="min-height:13px">Apellido 2</label></span></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_14"><label class="form-label form-label-top form-label-auto" id="label_14" for="input_14" aria-hidden="false"> C.I.F. / IDENTIFICACIÓN FISCAL </label>
+        <div id="cid_14" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_14" name="q14_cif" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_14" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_16"><label class="form-label form-label-top form-label-auto" id="label_16" for="input_16" aria-hidden="false"> Razón Social </label>
+        <div id="cid_16" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_16" name="q16_razonSocial" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_16" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_23"><label class="form-label form-label-top form-label-auto" id="label_23" for="input_23" aria-hidden="false"> Dirección del suministro, calle, plaza, avenida etc.. </label>
+        <div id="cid_23" class="form-input-wide" data-layout="half"> <input type="text" id="input_23" name="q23_escribaUna23" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_23" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_52"><label class="form-label form-label-top form-label-auto" id="label_52" for="input_52" aria-hidden="false"> C.U.P.S si dispone de él. </label>
+        <div id="cid_52" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_52" name="q52_cupsSi" data-type="input-textbox" class="form-textbox validate[Fill Mask]" data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox" aria-labelledby="label_52 sublabel_input_52" value="" /><label class="form-sub-label" for="input_52" id="sublabel_input_52" style="min-height:13px">formato EJEMPLO ES4852695412584523AB</label></span> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_24"><label class="form-label form-label-top form-label-auto" id="label_24" for="input_24" aria-hidden="false"> Municipio </label>
+        <div id="cid_24" class="form-input-wide" data-layout="half"> <input type="text" id="input_24" name="q24_municipio" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_24" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_25"><label class="form-label form-label-top form-label-auto" id="label_25" for="input_25" aria-hidden="false"> Provincia </label>
+        <div id="cid_25" class="form-input-wide" data-layout="half"> <input type="text" id="input_25" name="q25_escribaUna25" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_25" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_26"><label class="form-label form-label-top form-label-auto" id="label_26" for="input_26" aria-hidden="false"> Código postal </label>
+        <div id="cid_26" class="form-input-wide" data-layout="half"> <input type="text" id="input_26" name="q26_escribaUna26" data-type="input-textbox" class="form-textbox validate[Fill Mask]" data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox" aria-labelledby="label_26" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-1" data-type="control_dropdown" id="id_34"><label class="form-label form-label-top form-label-auto" id="label_34" for="input_34" aria-hidden="false"> Teléfono 1 , prefijo país </label>
+        <div id="cid_34" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_34" name="q34_telefono134" style="width:310px" data-component="dropdown" aria-label="Teléfono 1 , prefijo país ">
+            <option value="">Seleccione</option>
+            <option value="América:">América:</option>
+            <option value="Estados Unidos: +1">Estados Unidos: +1</option>
+            <option value="Canadá: +1">Canadá: +1</option>
+            <option value="México: +52">México: +52</option>
+            <option value="Brasil: +55">Brasil: +55</option>
+            <option value="Argentina: +54">Argentina: +54</option>
+            <option value="Colombia: +57">Colombia: +57</option>
+            <option value="Chile: +56">Chile: +56</option>
+            <option value="Venezuela: +58">Venezuela: +58</option>
+            <option value="Perú: +51">Perú: +51</option>
+            <option value="Ecuador: +593">Ecuador: +593</option>
+            <option value="Cuba: +53">Cuba: +53</option>
+            <option value="Bolivia: +591">Bolivia: +591</option>
+            <option value="Costa Rica: +506">Costa Rica: +506</option>
+            <option value="Panamá: +507">Panamá: +507</option>
+            <option value="Uruguay: +598">Uruguay: +598</option>
+            <option value="Europa:">Europa:</option>
+            <option value=""></option>
+            <option value="España: +34">España: +34</option>
+            <option value="Alemania: +49">Alemania: +49</option>
+            <option value="Francia: +33">Francia: +33</option>
+            <option value="Italia: +39">Italia: +39</option>
+            <option value="Reino Unido: +44">Reino Unido: +44</option>
+            <option value="Rusia: +7">Rusia: +7</option>
+            <option value="Ucrania: +380">Ucrania: +380</option>
+            <option value="Polonia: +48">Polonia: +48</option>
+            <option value="Rumania: +40">Rumania: +40</option>
+            <option value="Países Bajos: +31">Países Bajos: +31</option>
+            <option value="Bélgica: +32">Bélgica: +32</option>
+            <option value="Grecia: +30">Grecia: +30</option>
+            <option value="Portugal: +351">Portugal: +351</option>
+            <option value="Suecia: +46">Suecia: +46</option>
+            <option value="Noruega: +47">Noruega: +47</option>
+            <option value="Asia:">Asia:</option>
+            <option value=""></option>
+            <option value="China: +86">China: +86</option>
+            <option value="India: +91">India: +91</option>
+            <option value="Japón: +81">Japón: +81</option>
+            <option value="Corea del Sur: +82">Corea del Sur: +82</option>
+            <option value="Indonesia: +62">Indonesia: +62</option>
+            <option value="Turquía: +90">Turquía: +90</option>
+            <option value="Filipinas: +63">Filipinas: +63</option>
+            <option value="Tailandia: +66">Tailandia: +66</option>
+            <option value="Vietnam: +84">Vietnam: +84</option>
+            <option value="Israel: +972">Israel: +972</option>
+            <option value="Malasia: +60">Malasia: +60</option>
+            <option value="Singapur: +65">Singapur: +65</option>
+            <option value="Pakistán: +92">Pakistán: +92</option>
+            <option value="Bangladés: +880">Bangladés: +880</option>
+            <option value="Arabia Saudita: +966">Arabia Saudita: +966</option>
+            <option value="África:">África:</option>
+            <option value=""></option>
+            <option value="Egipto: +20">Egipto: +20</option>
+            <option value="Sudáfrica: +27">Sudáfrica: +27</option>
+            <option value="Nigeria: +234">Nigeria: +234</option>
+            <option value="Kenia: +254">Kenia: +254</option>
+            <option value="Marruecos: +212">Marruecos: +212</option>
+            <option value="Argelia: +213">Argelia: +213</option>
+            <option value="Uganda: +256">Uganda: +256</option>
+            <option value="Ghana: +233">Ghana: +233</option>
+            <option value="Camerún: +237">Camerún: +237</option>
+            <option value="Costa de Marfil: +225">Costa de Marfil: +225</option>
+            <option value="Senegal: +221">Senegal: +221</option>
+            <option value="Tanzania: +255">Tanzania: +255</option>
+            <option value="Sudán: +249">Sudán: +249</option>
+            <option value="Libia: +218">Libia: +218</option>
+            <option value="Túnez: +216">Túnez: +216</option>
+            <option value="Oceanía:">Oceanía:</option>
+            <option value=""></option>
+            <option value="Australia: +61">Australia: +61</option>
+            <option value="Nueva Zelanda: +64">Nueva Zelanda: +64</option>
+            <option value="Fiji: +679">Fiji: +679</option>
+            <option value="Papúa Nueva Guinea: +675">Papúa Nueva Guinea: +675</option>
+            <option value="Tonga: +676">Tonga: +676</option>
+            <option value="Medio Oriente:">Medio Oriente:</option>
+            <option value=""></option>
+            <option value="Irán: +98">Irán: +98</option>
+            <option value="Iraq: +964">Iraq: +964</option>
+            <option value="Jordania: +962">Jordania: +962</option>
+            <option value="Líbano: +961">Líbano: +961</option>
+            <option value="Kuwait: +965">Kuwait: +965</option>
+            <option value="Emiratos Árabes Unidos: +971">Emiratos Árabes Unidos: +971</option>
+            <option value="Omán: +968">Omán: +968</option>
+            <option value="Catar: +974">Catar: +974</option>
+            <option value="Bahrein: +973">Bahrein: +973</option>
+            <option value="Yemen: +967">Yemen: +967</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_textbox" id="id_27"><label class="form-label form-label-top form-label-auto" id="label_27" for="input_27" aria-hidden="false"> Teléfono 1<span class="form-required">*</span> </label>
+        <div id="cid_27" class="form-input-wide jf-required" data-layout="half"> <input type="text" id="input_27" name="q27_telefono1" data-type="input-textbox" class="form-textbox validate[required, Fill Mask]" data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox" aria-labelledby="label_27" required="" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_28"><label class="form-label form-label-top form-label-auto" id="label_28" for="input_28" aria-hidden="false"> Telefono 2 </label>
+        <div id="cid_28" class="form-input-wide" data-layout="half"> <input type="text" id="input_28" name="q28_escribaUna28" data-type="input-textbox" class="form-textbox validate[Fill Mask]" data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox" aria-labelledby="label_28" value="" /> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_30"><label class="form-label form-label-top form-label-auto" id="label_30" for="input_30" aria-hidden="false"> Email<span class="form-required">*</span> </label>
+        <div id="cid_30" class="form-input-wide jf-required" data-layout="half"> <input type="email" id="input_30" name="q30_email" class="form-textbox validate[required, Email]" data-defaultvalue="" autoComplete="section-input_30 email" style="width:310px" size="310" data-component="email" aria-labelledby="label_30" required="" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_35"><label class="form-label form-label-top form-label-auto" id="label_35" for="input_35" aria-hidden="false"> Potencia de electricidad a contratar watios </label>
+        <div id="cid_35" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_35" name="q35_potenciaDe" style="width:310px" data-component="dropdown" aria-label="Potencia de electricidad a contratar watios">
+            <option value="">Seleccione</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+            <option value="500">500</option>
+            <option value="600">600</option>
+            <option value="700">700</option>
+            <option value="800">800</option>
+            <option value="900">900</option>
+            <option value="1000">1000</option>
+            <option value="1100">1100</option>
+            <option value="1200">1200</option>
+            <option value="1300">1300</option>
+            <option value="1400">1400</option>
+            <option value="1500">1500</option>
+            <option value="1600">1600</option>
+            <option value="1700">1700</option>
+            <option value="1800">1800</option>
+            <option value="1900">1900</option>
+            <option value="2000">2000</option>
+            <option value="2100">2100</option>
+            <option value="2200">2200</option>
+            <option value="2300">2300</option>
+            <option value="2400">2400</option>
+            <option value="2500">2500</option>
+            <option value="2600">2600</option>
+            <option value="2700">2700</option>
+            <option value="2800">2800</option>
+            <option value="2900">2900</option>
+            <option value="3000">3000</option>
+            <option value="3100">3100</option>
+            <option value="3200">3200</option>
+            <option value="3300">3300</option>
+            <option value="3400">3400</option>
+            <option value="3500">3500</option>
+            <option value="3600">3600</option>
+            <option value="3700">3700</option>
+            <option value="3800">3800</option>
+            <option value="3900">3900</option>
+            <option value="4000">4000</option>
+            <option value="4100">4100</option>
+            <option value="4200">4200</option>
+            <option value="4300">4300</option>
+            <option value="4400">4400</option>
+            <option value="4500">4500</option>
+            <option value="4600">4600</option>
+            <option value="4700">4700</option>
+            <option value="4800">4800</option>
+            <option value="4900">4900</option>
+            <option value="5000">5000</option>
+            <option value="5100">5100</option>
+            <option value="5200">5200</option>
+            <option value="5300">5300</option>
+            <option value="5400">5400</option>
+            <option value="5500">5500</option>
+            <option value="5600">5600</option>
+            <option value="5700">5700</option>
+            <option value="5800">5800</option>
+            <option value="5900">5900</option>
+            <option value="6000">6000</option>
+            <option value="6100">6100</option>
+            <option value="6200">6200</option>
+            <option value="6300">6300</option>
+            <option value="6400">6400</option>
+            <option value="6500">6500</option>
+            <option value="6600">6600</option>
+            <option value="6700">6700</option>
+            <option value="6800">6800</option>
+            <option value="6900">6900</option>
+            <option value="7000">7000</option>
+            <option value="7100">7100</option>
+            <option value="7200">7200</option>
+            <option value="7300">7300</option>
+            <option value="7400">7400</option>
+            <option value="7500">7500</option>
+            <option value="7600">7600</option>
+            <option value="7700">7700</option>
+            <option value="7800">7800</option>
+            <option value="7900">7900</option>
+            <option value="8000">8000</option>
+            <option value="8100">8100</option>
+            <option value="8200">8200</option>
+            <option value="8300">8300</option>
+            <option value="8400">8400</option>
+            <option value="8500">8500</option>
+            <option value="8600">8600</option>
+            <option value="8700">8700</option>
+            <option value="8800">8800</option>
+            <option value="8900">8900</option>
+            <option value="9000">9000</option>
+            <option value="9100">9100</option>
+            <option value="9200">9200</option>
+            <option value="9300">9300</option>
+            <option value="9400">9400</option>
+            <option value="9500">9500</option>
+            <option value="9600">9600</option>
+            <option value="9700">9700</option>
+            <option value="9800">9800</option>
+            <option value="9900">9900</option>
+            <option value="10000">10000</option>
+            <option value="10100">10100</option>
+            <option value="10200">10200</option>
+            <option value="10300">10300</option>
+            <option value="10400">10400</option>
+            <option value="10500">10500</option>
+            <option value="10600">10600</option>
+            <option value="10700">10700</option>
+            <option value="10800">10800</option>
+            <option value="10900">10900</option>
+            <option value="11000">11000</option>
+            <option value="11100">11100</option>
+            <option value="11200">11200</option>
+            <option value="11300">11300</option>
+            <option value="11400">11400</option>
+            <option value="11500">11500</option>
+            <option value="11600">11600</option>
+            <option value="11700">11700</option>
+            <option value="11800">11800</option>
+            <option value="11900">11900</option>
+            <option value="12000">12000</option>
+            <option value="12100">12100</option>
+            <option value="12200">12200</option>
+            <option value="12300">12300</option>
+            <option value="12400">12400</option>
+            <option value="12500">12500</option>
+            <option value="12600">12600</option>
+            <option value="12700">12700</option>
+            <option value="12800">12800</option>
+            <option value="12900">12900</option>
+            <option value="13000">13000</option>
+            <option value="13100">13100</option>
+            <option value="13200">13200</option>
+            <option value="13300">13300</option>
+            <option value="13400">13400</option>
+            <option value="13500">13500</option>
+            <option value="13600">13600</option>
+            <option value="13700">13700</option>
+            <option value="13800">13800</option>
+            <option value="13900">13900</option>
+            <option value="14000">14000</option>
+            <option value="14100">14100</option>
+            <option value="14200">14200</option>
+            <option value="14300">14300</option>
+            <option value="14400">14400</option>
+            <option value="14500">14500</option>
+            <option value="14600">14600</option>
+            <option value="14700">14700</option>
+            <option value="14800">14800</option>
+            <option value="14900">14900</option>
+            <option value="15000">15000</option>
+            <option value="mayor de 1500 w">mayor de 1500 w</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_37"><label class="form-label form-label-top form-label-auto" id="label_37" for="input_37" aria-hidden="false"> Tarifa de gas a contratar </label>
+        <div id="cid_37" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_37" name="q37_tarifaDe" style="width:310px" data-component="dropdown" aria-label="Tarifa de gas a contratar">
+            <option value="">Seleccione</option>
+            <option value="RL.1 Consumo igual o inferior a 5.000 kWh/año">RL.1 Consumo igual o inferior a 5.000 kWh/año</option>
+            <option value="RL.2 Consumo superior a 5.000 de kWh/año">RL.2 Consumo superior a 5.000 de kWh/año</option>
+            <option value="RL.3 Consumo superior a 15.000 de kWh/año">RL.3 Consumo superior a 15.000 de kWh/año</option>
+            <option value="RL.4 Consumo superior a 5">RL.4 Consumo superior a 5</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_radio" id="id_42"><label class="form-label form-label-top form-label-auto" id="label_42" aria-hidden="false"> forma de pago </label>
+        <div id="cid_42" class="form-input-wide" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_42" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_42" type="radio" class="form-radio" id="input_42_0" name="q42_formaDe" value="domiciliado" /><label id="label_input_42_0" for="input_42_0">domiciliado</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input aria-describedby="label_42" type="radio" class="form-radio" id="input_42_1" name="q42_formaDe" value="no domiciliado" /><label id="label_input_42_1" for="input_42_1">no domiciliado</label></span></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden" data-type="control_textbox" id="id_51"><label class="form-label form-label-top form-label-auto" id="label_51" for="input_51" aria-hidden="false"> titular de la cuenta ( rellenar si es distinto al titular del contrato) </label>
+        <div id="cid_51" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_51" name="q51_titularDe" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_51" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_38"><label class="form-label form-label-top form-label-auto" id="label_38" for="input_38" aria-hidden="false"> Ibán dos letras y dos números </label>
+        <div id="cid_38" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_38" name="q38_ibanDos" data-type="input-textbox" class="form-textbox validate[Fill Mask]" data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox" aria-labelledby="label_38" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_39"><label class="form-label form-label-top form-label-auto" id="label_39" for="input_39" aria-hidden="false"> cuenta, cuatro dígitos </label>
+        <div id="cid_39" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_39" name="q39_escribaUna39" data-type="input-textbox" class="form-textbox validate[Fill Mask]" data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox" aria-labelledby="label_39" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_53"><label class="form-label form-label-top form-label-auto" id="label_53" for="input_53" aria-hidden="false"> cuenta, cuatro dígitos </label>
+        <div id="cid_53" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_53" name="q53_cuentaCuatro" data-type="input-textbox" class="form-textbox validate[Fill Mask]" data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox" aria-labelledby="label_53" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_54"><label class="form-label form-label-top form-label-auto" id="label_54" for="input_54" aria-hidden="false"> cuenta, cuatro dígitos </label>
+        <div id="cid_54" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_54" name="q54_cuentaCuatro54" data-type="input-textbox" class="form-textbox validate[Fill Mask]" data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox" aria-labelledby="label_54" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_55"><label class="form-label form-label-top form-label-auto" id="label_55" for="input_55" aria-hidden="false"> cuenta, cuatro dígitos </label>
+        <div id="cid_55" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_55" name="q55_cuentaCuatro55" data-type="input-textbox" class="form-textbox validate[Fill Mask]" data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox" aria-labelledby="label_55" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_56"><label class="form-label form-label-top form-label-auto" id="label_56" for="input_56" aria-hidden="false"> cuenta, cuatro dígitos </label>
+        <div id="cid_56" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_56" name="q56_cuentaCuatro56" data-type="input-textbox" class="form-textbox validate[Fill Mask]" data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox" aria-labelledby="label_56" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_fileupload" id="id_36"><label class="form-label form-label-top form-label-auto" id="label_36" for="input_36" aria-hidden="false"> D.N.I., N.I.E.del titular o del representante del contrato. (ambas caras) ( se pueden subir varios archivos </label>
+        <div id="cid_36" class="form-input-wide" data-layout="full">
+          <div class="jfQuestion-fields" data-wrapper-react="true">
+            <div class="jfField isFilled">
+              <div class="jfUpload-wrapper">
+                <div class="jfUpload-container">
+                  <div class="jfUpload-button-container">
+                    <div class="jfUpload-button" aria-hidden="true" tabindex="0" style="display:none" data-version="v2">Buscar archivos<div class="jfUpload-heading forDesktop">Arrastre y suelte archivos aquí</div>
+                      <div class="jfUpload-heading forMobile">Elegir un archivo</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="jfUpload-files-container">
+                  <div class="validate[multipleUpload]"><input type="file" id="input_36" name="q36_dniNiedel[]" multiple="" class="form-upload-multiple" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-limit-file-size="Yes" data-file-maxsize="10854" data-file-minsize="0" data-file-limit="" data-component="fileupload" aria-label="Buscar archivos" /></div>
+                </div>
+              </div>
+              <div data-wrapper-react="true"></div>
+            </div><span style="display:none" class="cancelText">Cancel</span><span style="display:none" class="ofText">of</span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fileupload" id="id_44"><label class="form-label form-label-top form-label-auto" id="label_44" for="input_44" aria-hidden="false"> CIF. identificación fiscal. ( empresas, personas jurídicas)(puede subir varios archivos) </label>
+        <div id="cid_44" class="form-input-wide" data-layout="full">
+          <div class="jfQuestion-fields" data-wrapper-react="true">
+            <div class="jfField isFilled">
+              <div class="jfUpload-wrapper">
+                <div class="jfUpload-container">
+                  <div class="jfUpload-button-container">
+                    <div class="jfUpload-button" aria-hidden="true" tabindex="0" style="display:none" data-version="v2">Buscar archivos<div class="jfUpload-heading forDesktop">Arrastre y suelte archivos aquí</div>
+                      <div class="jfUpload-heading forMobile">Elegir un archivo</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="jfUpload-files-container">
+                  <div class="validate[multipleUpload]"><input type="file" id="input_44" name="q44_cifIdentificacion[]" multiple="" class="form-upload-multiple" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-limit-file-size="Yes" data-file-maxsize="10854" data-file-minsize="0" data-file-limit="" data-component="fileupload" aria-label="Buscar archivos" /></div>
+                </div>
+              </div>
+              <div data-wrapper-react="true"></div>
+            </div><span style="display:none" class="cancelText">Cancel</span><span style="display:none" class="ofText">of</span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fileupload" id="id_45"><label class="form-label form-label-top form-label-auto" id="label_45" for="input_45" aria-hidden="false"> certificado de cuenta, recibo bancario , acreditación de cuenta. (puede subir varios archivos) </label>
+        <div id="cid_45" class="form-input-wide" data-layout="full">
+          <div class="jfQuestion-fields" data-wrapper-react="true">
+            <div class="jfField isFilled">
+              <div class="jfUpload-wrapper">
+                <div class="jfUpload-container">
+                  <div class="jfUpload-button-container">
+                    <div class="jfUpload-button" aria-hidden="true" tabindex="0" style="display:none" data-version="v2">Buscar archivos<div class="jfUpload-heading forDesktop">Arrastre y suelte archivos aquí</div>
+                      <div class="jfUpload-heading forMobile">Elegir un archivo</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="jfUpload-files-container">
+                  <div class="validate[multipleUpload]"><input type="file" id="input_45" name="q45_certificadoDe[]" multiple="" class="form-upload-multiple" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-limit-file-size="Yes" data-file-maxsize="10854" data-file-minsize="0" data-file-limit="" data-component="fileupload" aria-label="Buscar archivos" /></div>
+                </div>
+              </div>
+              <div data-wrapper-react="true"></div>
+            </div><span style="display:none" class="cancelText">Cancel</span><span style="display:none" class="ofText">of</span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fileupload" id="id_46"><label class="form-label form-label-top form-label-auto" id="label_46" for="input_46" aria-hidden="false"> otra documentación.(si dispone) (puede subir varios archivos) licencias de uso o actividad, escritura, copia simple, contrato de alquiler, factura actual.etc.... </label>
+        <div id="cid_46" class="form-input-wide" data-layout="full">
+          <div class="jfQuestion-fields" data-wrapper-react="true">
+            <div class="jfField isFilled">
+              <div class="jfUpload-wrapper">
+                <div class="jfUpload-container">
+                  <div class="jfUpload-button-container">
+                    <div class="jfUpload-button" aria-hidden="true" tabindex="0" style="display:none" data-version="v2">Buscar archivos<div class="jfUpload-heading forDesktop">Arrastre y suelte archivos aquí</div>
+                      <div class="jfUpload-heading forMobile">Elegir un archivo</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="jfUpload-files-container">
+                  <div class="validate[multipleUpload]"><input type="file" id="input_46" name="q46_otraDocumentacionsi[]" multiple="" class="form-upload-multiple" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-limit-file-size="Yes" data-file-maxsize="10854" data-file-minsize="0" data-file-limit="" data-component="fileupload" aria-label="Buscar archivos" /></div>
+                </div>
+              </div>
+              <div data-wrapper-react="true"></div>
+            </div><span style="display:none" class="cancelText">Cancel</span><span style="display:none" class="ofText">of</span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_47"><label class="form-label form-label-top form-label-auto" id="label_47" for="input_47" aria-hidden="false"> observaciones dudas.. </label>
+        <div id="cid_47" class="form-input-wide" data-layout="full"> <textarea id="input_47" class="form-textarea" name="q47_observacionesDudas" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_47"></textarea> </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><span> </span><button id="input_print_2" type="button" class="form-submit-print jf-form-buttons" data-component="button"><img src="https://cdn.jotfor.ms/images/printer.png" style="vertical-align:middle" alt="Imprimir" /><span id="span_print_2" class="span_print">Imprimir</span></button><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField legacy-submit" data-component="button" data-content="">Enviar</button></div>
+          <div class="form-submit-clear-wrapper"><button id="input_reset_2" type="reset" class="form-submit-reset jf-form-buttons" data-component="button">borrar formulario </button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" type="hidden" /></li>
+    </ul>
+  </div>
+  <script>
+    JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+    JotForm.poweredByText = "Go to “Installations” section,";
+  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="250734095309054" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='250734095309054'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "250734095309054-250734095309054";
+    }
+  </script>
+</form>
+<link id=color-scheme-style href="https://cdn01.jotfor.ms/stylebuilder/static/color-scheme.css?v=3.3.61741" type="text/css" rel="stylesheet" /><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.forwardToEu=true;</script><script type="text/javascript">JotForm.isNewSACL=true;</script>
